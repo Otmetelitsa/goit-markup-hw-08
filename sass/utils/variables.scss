@@ -15,7 +15,10 @@
   --modal-btn: #188ce8;
 
   --icon-grey: #afb1b8;
-  --set-gap: 30px;
+  --max-tablet: max-width: 767px;
+  --min-tablet: min-width: 768px;
+  --max-mobile: max-width: 479px;
+  --min-mobile: min-width: 480px;
 
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
