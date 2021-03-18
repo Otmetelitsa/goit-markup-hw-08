@@ -1,0 +1,105 @@
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer__title,
+.feature__title,
+.project__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo__text,
+.page-header__link--active,
+.page-header__link:focus,
+.page-header__item:hover,
+.page-header__item:focus,
+.header-contact__link:hover,
+.header-contact__link:focus,
+.modal__contract-link,
+.filter__item:hover,
+.filter__item:focus {
+  color: var(--text-blue);
+}
+
+.header-contact__link,
+.modal__label-check,
+.feature__text {
+  color: var(--text-grey);
+}
+
+.hero__title,
+.occupation__overlay-text,
+.footer,
+.footer__logo,
+.subscription__input,
+.filter__button:hover,
+.filter__button:focus {
+  color: var(--text-white);
+}
+
+.hero,
+.footer,
+.subscription__input {
+  background-color: var(--back-black-light);
+}
+
+.social__link:hover,
+.social__link:focus,
+.filter__button:hover,
+.filter__button:focus {
+  background-color: var(--text-blue);
+}
+
+.page-header__item,
+.page-header__link,
+.header-contact__link,
+.client__link,
+.social__link,
+.filter__button {
+  transition: color 250ms var(--cubic);
+}
+
+.social__link,
+.filter__button {
+  transition: background-color 250ms var(--cubic);
+}
+
+.project__item {
+  transition: box-shadow 250ms var(--cubic);
+}
+
+.filter__item:focus,
+.social__link:focus,
+.modal__input:focus,
+.modal__comment-input:focus,
+.filter__button:focus {
+  outline: none;
+}
+
+.button {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  border: transparent;
+  background-color: var(--text-blue);
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--text-white);
+}

@@ -1,0 +1,105 @@
+:root {
+  --text-blue: #2196f3;
+  --text-black: #212121;
+  --text-grey: #757575;
+  --text-grey-op60: rgba(255, 255, 255, 0.6);
+  --text-white: #ffffff;
+
+  --back-white: #e5e5e5;
+  --back-black-light: #2f303a;
+  --back-grey: #f5f4fa;
+  --back-grey-btn: #f5f4fa;
+  --border: #eeeeee;
+  --overlay: rgba(33, 150, 243, 0.9);
+  --occup-overlay: rgba(47, 48, 58, 0.8);
+  --modal-btn: #188ce8;
+
+  --icon-grey: #afb1b8;
+  --set-gap: 30px;
+
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.page-header__logo {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-header__nav,
+.header-contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  align-items: center;
+}
+
+.hero__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.modal__input,
+.modal__comment-input,
+.modal__comment-input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.01em;
+}
+
+.feature__item-title,
+.occupation__overlay-text,
+.join__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.occupation__title,
+.team__title,
+.client__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.modal__label-check,
+.footer__address,
+.feature__text,
+.footer__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.filter__button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
