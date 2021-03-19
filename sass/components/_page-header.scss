@@ -49,8 +49,10 @@
   }
 }
 
-.menu {
+.button-menu {
   margin-left: auto;
+  border: transparent;
+  background-color: var(--text-white);
 
   @media (min-width: 768px) {
     display: none;

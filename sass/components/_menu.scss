@@ -1,0 +1,7 @@
+.menu-container {
+  display: none;
+}
+
+.menu-container.is-open {
+  width: 480px;
+}
