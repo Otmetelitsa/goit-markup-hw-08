@@ -16,11 +16,6 @@
 
   --icon-grey: #afb1b8;
 
-  --max-tablet: (max-width: 767px);
-  --min-tablet: (min-width: 768px);
-  --max-mobile: (max-width: 479px);
-  --min-mobile: (min-width: 480px);
-
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -28,13 +23,14 @@
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
-}
 
-.page-header__logo {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .page-header__nav,
@@ -50,10 +46,15 @@
 .hero__title {
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
+  font-size: 26px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.363;
+  }
 }
 
 .modal__input,
@@ -68,7 +69,8 @@
 
 .feature__item-title,
 .occupation__overlay-text,
-.join__title {
+.join__title,
+.subscription__title {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -84,6 +86,24 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187;
   letter-spacing: 0.03em;
   text-align: center;
 }

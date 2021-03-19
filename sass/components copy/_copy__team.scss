@@ -2,24 +2,26 @@
   background-color: var(--back-grey);
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 0;
-
-  @media (min-width: 1200px) {
-    padding: 94px 0;
-  }
+  padding: 94px 0;
 }
 
 .team__title {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
 
-  @media (min-width: 1200px) {
-    margin-bottom: 50px;
-  }
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px;
+  margin-left: -30px;
 }
 
 .team__item {
   background-color: var(--text-white);
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
+
+  flex-basis: calc((100% - 120px) / 4);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -31,28 +33,34 @@
 }
 
 .team__card {
-  padding: 30px 122px 24px 122px;
-
-  @media (min-width: 1200px) {
-    padding: 30px 32px;
-  }
+  padding: 30px 32px;
 }
 
 .team__name {
   margin-bottom: 10px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team__text {
   margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  text-align: center;
   color: var(--text-grey);
 }
 
 .social {
   display: flex;
-  @media (max-width: 1199px) {
-    justify-content: center;
-  }
-  justify-content: center;
 }
 
 .social__item:not(:last-child) {
@@ -69,6 +77,11 @@
   color: var(--icon-grey);
 }
 
+.social__link:focus,
+.social__link:hover {
+  color: var(--text-white);
+}
+
 .social__icon {
   display: flex;
   width: 20px;
@@ -79,28 +92,7 @@
   fill: var(--icon-grey);
 }
 
-@media (min-width: 1200px) {
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -50px;
-    margin-left: -30px;
-  }
-
-  .team__item {
-    margin-top: 50px;
-    margin-left: 30px;
-
-    flex-basis: calc((100% - 120px) / 4);
-  }
-
-  .social__link:focus,
-  .social__link:hover {
-    color: var(--text-white);
-  }
-
-  .social__icon:hover,
-  .social__icon:focus {
-    fill: currentColor;
-  }
+.social__icon:hover,
+.social__icon:focus {
+  fill: currentColor;
 }
