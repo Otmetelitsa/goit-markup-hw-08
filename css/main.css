@@ -319,6 +319,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 80px;
   padding-top: 16px;
   padding-bottom: 16px;
   -webkit-box-align: center;
@@ -328,7 +329,6 @@ textarea {
 
 @media (min-width: 1200px) {
   .page-header .container {
-    min-height: 80px;
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -392,13 +392,14 @@ textarea {
     margin-left: auto;
   }
   .header-contact__item:last-child {
-    margin-left: 10px;
+    margin-top: 10px;
   }
 }
 
 @media (min-width: 768px) and (min-width: 1199px) {
   .header-contact__item:last-child {
     margin-left: 50px;
+    margin-top: 0;
   }
 }
 
