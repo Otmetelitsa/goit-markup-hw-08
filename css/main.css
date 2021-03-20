@@ -1134,6 +1134,14 @@ textarea {
   padding: 60px 0;
 }
 
+@media (max-width: 1199px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer__address {
   margin-top: 20px;
   text-align: center;
@@ -1171,9 +1179,22 @@ textarea {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .footer__contact {
+    display: inline-block;
+    margin-right: 165px;
+    margin-left: 73px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
 @media (min-width: 1200px) {
   .footer__contact {
     display: block;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -1194,10 +1215,22 @@ textarea {
   margin-top: 60px;
 }
 
+@media (min-width: 768px) {
+  .join {
+    display: inline-block;
+    margin-top: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 @media (min-width: 1200px) {
   .join {
-    margin-top: 0;
     margin-left: 70px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -1245,6 +1278,8 @@ textarea {
 @media (min-width: 768px) {
   .subscription__input {
     width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1289,9 +1324,6 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
   .subscription__form {
     display: -webkit-box;
