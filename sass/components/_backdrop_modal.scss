@@ -30,8 +30,6 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   padding: 40px;
-  max-height: 100vh;
-  overflow-y: auto;
 
   background-color: var(--text-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -39,6 +37,11 @@
   border-radius: 4px;
   transition: transform 250ms var(--cubic);
   z-index: 10;
+
+  @media (min-width: 1200px) {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
 }
 
 .modal__group {
@@ -71,9 +74,14 @@
 
 .modal__input {
   width: 100%;
+  min-width: 370px;
   padding: 12px;
   padding-left: 42px;
   transition: border-color 250ms var(--cubic);
+
+  @media (min-width: 1200px) {
+    min-width: 448px;
+  }
 }
 
 .modal__close-icon,
@@ -102,13 +110,18 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal__comment-input {
   width: 100%;
+  min-width: 370px;
   height: 120px;
   margin-top: 4px;
   margin-bottom: 20px;
@@ -119,6 +132,10 @@
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 448px;
   }
 }
 
@@ -133,6 +150,17 @@
   justify-content: center;
   align-items: center;
   user-select: none;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .modal__check-icon {
