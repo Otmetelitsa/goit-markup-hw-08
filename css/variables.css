@@ -102,7 +102,8 @@
 
 .feature__item-title,
 .occupation__overlay-text,
-.join__title {
+.join__title,
+.subscription__text {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
