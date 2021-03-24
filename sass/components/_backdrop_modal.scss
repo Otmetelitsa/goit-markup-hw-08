@@ -51,11 +51,6 @@
 }
 
 .modal__label {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
   color: var(--text-grey);
 }
 
@@ -106,17 +101,6 @@
 
 .modal__title {
   margin-bottom: 12px;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  @media (min-width: 1200px) {
-    line-height: 1.15;
-  }
 }
 
 .modal__comment-input {
@@ -150,17 +134,6 @@
   justify-content: center;
   align-items: center;
   user-select: none;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
-
-  @media (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.714;
-  }
 }
 
 .modal__check-icon {
