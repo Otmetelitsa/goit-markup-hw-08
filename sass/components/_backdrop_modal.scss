@@ -205,6 +205,10 @@
     fill: var(--text-blue);
     transition: fill 250ms var(--cubic);
   }
+
+  @media (max-width: 1199px) {
+    outline: none;
+  }
 }
 
 .modal__send-button {

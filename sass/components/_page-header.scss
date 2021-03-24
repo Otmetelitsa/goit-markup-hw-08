@@ -1,9 +1,15 @@
 .page-header .container {
   display: flex;
-  min-height: 80px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  min-height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   align-items: center;
+
+  @media (min-width: 768px) {
+    min-height: 80px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 
   @media (min-width: 1200px) {
     padding-top: 24px;
@@ -11,73 +17,61 @@
   }
 }
 
-.button-menu {
-  margin-left: auto;
-  border: transparent;
-  background-color: var(--text-white);
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 
-  @media (min-width: 768px) {
-    display: none;
+.page-header__nav {
+  display: flex;
+}
+
+.page-header__list {
+  display: flex;
+  margin-left: 88px;
+  @media (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+  .page-header__link {
+    position: relative;
+    padding: 32px 0;
+  }
+
+  .page-header__link--active::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+
+    border-bottom: 4px solid var(--text-blue);
+    border-radius: 2px;
   }
 }
 
-@media (min-width: 768px) {
-  .page-header {
-    border-bottom: 1px solid #ececec;
-  }
+.page-header__item:not(:first-child) {
+  margin-left: 50px;
+}
 
-  .page-header__nav {
-    display: flex;
-  }
+.header-contact {
+  margin-left: auto;
+}
 
-  .page-header__list {
-    display: flex;
-    margin-left: 88px;
-    @media (min-width: 1200px) {
-      margin-left: 93px;
-    }
-
-    .page-header__link {
-      position: relative;
-      padding: 32px 0;
-    }
-
-    .page-header__link--active::after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 4px;
-
-      border-bottom: 4px solid var(--text-blue);
-      border-radius: 2px;
-    }
-  }
-
-  .page-header__item:not(:first-child) {
+.header-contact__item:last-child {
+  margin-top: 10px;
+  @media (min-width: 1199px) {
     margin-left: 50px;
+    margin-top: 0;
   }
+}
 
-  .header-contact {
-    margin-left: auto;
-  }
-
-  .header-contact__item:last-child {
-    margin-top: 10px;
-    @media (min-width: 1199px) {
-      margin-left: 50px;
-      margin-top: 0;
-    }
-  }
-
-  .header-contact__icon {
-    margin-right: 8px;
-    fill: currentColor;
-    @media (min-width: 1199px) {
-      margin-right: 10px;
-    }
+.header-contact__icon {
+  margin-right: 8px;
+  fill: currentColor;
+  @media (min-width: 1199px) {
+    margin-right: 10px;
   }
 }
 

@@ -40,13 +40,19 @@
 .header-contact__link:focus,
 .modal__contract-link,
 .filter__item:hover,
-.filter__item:focus {
+.filter__item:focus,
+.menu__link--active,
+.menu__item:hover,
+.menu__item:focus,
+.menu__contact-item:hover,
+.menu__contact-item:focus {
   color: var(--text-blue);
 }
 
 .header-contact__link,
 .modal__label-check,
-.feature__text {
+.feature__text,
+.menu__contact-item {
   color: var(--text-grey);
 }
 
