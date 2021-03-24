@@ -568,7 +568,7 @@ textarea {
 .hero__container {
   padding: 118px 0 118px 0;
   margin: 0 auto;
-  min-width: 450px;
+  min-width: 480px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1264,7 +1264,6 @@ textarea {
             align-items: flex-start;
     margin-right: 165px;
     margin-left: 73px;
-    align-items: start;
   }
 }
 
@@ -1531,12 +1530,12 @@ textarea {
 
 .project__card {
   padding: 20px 24px;
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  border-left: 1px solid var(--border);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
 }
 
 @media (min-width: 1200px) {
@@ -1553,10 +1552,8 @@ textarea {
 .project__thumb {
   position: relative;
   overflow: hidden;
-  width: 450px;
+  width: 100%;
   height: 294px;
-  -o-object-position: center;
-     object-position: center;
 }
 
 @media (min-width: 768px) {
