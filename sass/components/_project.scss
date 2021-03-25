@@ -110,18 +110,21 @@
 .project__thumb {
   position: relative;
   overflow: hidden;
-  // width: 450px;
-  width: 100%;
   height: 294px;
-  // object-position: center;
 
   @media (min-width: 768px) {
-    width: 354px;
+    // width: 354px;
   }
 
   @media (min-width: 1200px) {
-    width: 370px;
+    // width: 370px;
   }
+}
+
+.project__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project__overlay {
@@ -130,7 +133,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
 
   color: var(--text-white);
   background-color: var(--overlay);
@@ -141,4 +144,14 @@
 
 .project__item:hover .project__overlay {
   transform: translatey(0);
+
+  @media (min-width: 768px) {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 }
