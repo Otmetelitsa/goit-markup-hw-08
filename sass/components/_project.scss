@@ -60,17 +60,16 @@
 }
 
 .project__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .project__item {
-  display: flex;
-  flex-direction: column;
   margin-top: 30px;
-  margin-left: 30px;
 
   &:hover,
   &:focus {
@@ -80,6 +79,9 @@
   }
 
   @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
 
@@ -87,7 +89,6 @@
     flex-basis: calc((100% - 90px) / 3);
   }
 }
-
 
 .project__card {
   padding: 20px 24px;
