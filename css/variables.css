@@ -44,6 +44,13 @@
           align-items: center;
 }
 
+@media (max-width: 1199px) {
+  .header-contact {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+
 .hero__title {
   font-style: normal;
   font-weight: 900;
@@ -194,6 +201,14 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.subscription__input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
 }
 

@@ -84,6 +84,13 @@ textarea {
           align-items: center;
 }
 
+@media (max-width: 1199px) {
+  .header-contact {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+
 .hero__title {
   font-style: normal;
   font-weight: 900;
@@ -234,6 +241,14 @@ textarea {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.subscription__input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
 }
 
@@ -1242,24 +1257,14 @@ textarea {
 }
 
 @media (min-width: 768px) {
-  .footer__contact {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-right: 165px;
-    margin-left: 73px;
+  .footer__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
-@media (min-width: 1200px) {
-  .footer__contact {
-    display: block;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-}
-
-.footer__wrapper {
+.footer__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1272,13 +1277,30 @@ textarea {
           align-items: center;
 }
 
-footer__title {
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .footer__contact {
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__contact {
+    margin-left: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 
 .footer__address {
   margin-top: 20px;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .footer__address {
+    text-align: start;
+  }
 }
 
 .footer__list {
@@ -1319,20 +1341,15 @@ footer__title {
 
 @media (min-width: 768px) {
   .join {
-    display: inline-block;
-    margin-top: 0;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    margin-top: 5px;
+    margin-left: 163px;
   }
 }
 
 @media (min-width: 1200px) {
   .join {
+    margin-top: 15px;
     margin-left: 70px;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
@@ -1360,7 +1377,7 @@ footer__title {
 
 @media (min-width: 1200px) {
   .subscription {
-    margin-top: 0;
+    margin-top: 12px;
     margin-left: auto;
     text-align: start;
   }
@@ -1411,7 +1428,9 @@ footer__title {
 
 @media (min-width: 1200px) {
   .subscription__button {
+    margin-top: 0;
     margin-left: 12px;
+    margin-right: 0;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
