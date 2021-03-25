@@ -1,6 +1,7 @@
 .feature {
   padding-top: 60px;
   padding-bottom: 60px;
+
   @media (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 0;
@@ -9,6 +10,7 @@
 
 .feature__item-title {
   margin-top: 30px;
+
   @media (max-width: 767px) {
     text-align: center;
   }
