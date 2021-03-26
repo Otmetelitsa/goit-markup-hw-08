@@ -1251,7 +1251,6 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 210px;
   height: 90px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
