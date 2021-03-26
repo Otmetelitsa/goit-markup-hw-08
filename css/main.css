@@ -584,6 +584,7 @@ textarea {
 .hero__container {
   padding: 118px 0 118px 0;
   margin: 0 auto;
+  max-width: 480px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -600,6 +601,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .hero__container {
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero_tablet.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_tablet.jpg);
   }
@@ -1038,10 +1040,8 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .team__title {
-    margin-bottom: 30px;
-  }
+.team__title {
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -1070,14 +1070,18 @@ textarea {
 
 .team__item {
   background-color: var(--text-white);
-  margin-top: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team__item:not(:first-child) {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .team__item {
+    margin-top: 30px;
     margin-left: 30px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
@@ -1368,6 +1372,12 @@ textarea {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .join {
+    margin-top: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .join {
     margin-top: 15px;
@@ -1583,10 +1593,6 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-top: 30px;
     margin-left: 30px;
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
@@ -1601,13 +1607,28 @@ textarea {
   }
 }
 
+.project__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .project__card {
   padding: 20px 24px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   border: 1px solid var(--border);
   border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+  .project__card {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 @media screen and (min-width: 1200px) {
