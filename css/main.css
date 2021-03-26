@@ -1694,6 +1694,8 @@ textarea {
   border: transparent;
   outline: none;
   background-color: transparent;
+  -webkit-transition: fill 250ms var(--cubic);
+  transition: fill 250ms var(--cubic);
 }
 
 @media (min-width: 768px) {
@@ -1728,12 +1730,26 @@ textarea {
   outline: none;
 }
 
+.menu__button-close:hover use,
+.menu__button-close:focus use {
+  fill: var(--text-blue);
+  -webkit-transition: fill 250ms var(--cubic);
+  transition: fill 250ms var(--cubic);
+}
+
+.menu__item {
+  -webkit-transition: color 250ms var(--cubic);
+  transition: color 250ms var(--cubic);
+}
+
 .menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
 .menu__contact {
   margin-top: 302px;
+  -webkit-transition: color 250ms var(--cubic);
+  transition: color 250ms var(--cubic);
 }
 
 .menu__contact-item:not(:first-child) {

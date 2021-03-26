@@ -9,7 +9,6 @@
 
   transform: translateX(101%);
   transition: transform 250ms var(--cubic);
-  // z-index: 20;
 }
 
 .menu__container.is-open {
@@ -22,6 +21,7 @@
   border: transparent;
   outline: none;
   background-color: transparent;
+  transition: fill 250ms var(--cubic);
 
   @media (min-width: 768px) {
     display: none;
@@ -47,6 +47,16 @@
   border: transparent;
   background-color: transparent;
   outline: none;
+
+  &:hover use,
+  &:focus use {
+    fill: var(--text-blue);
+    transition: fill 250ms var(--cubic);
+  }
+}
+
+.menu__item {
+  transition: color 250ms var(--cubic);
 }
 
 .menu__item:not(:last-child) {
@@ -55,6 +65,7 @@
 
 .menu__contact {
   margin-top: 302px;
+  transition: color 250ms var(--cubic);
 }
 
 .menu__contact-item:not(:first-child) {

@@ -6,12 +6,6 @@
   @media (min-width: 768px) {
     display: flex;
   }
-
-  @media (min-width: 1200px) {
-    // display: block;
-    // margin-right: 0px;
-    // margin-left: 0px;
-  }
 }
 
 .footer__contact {
@@ -146,13 +140,6 @@
   height: 24px;
   fill: var(--text-white);
   margin-left: 10px;
-}
-
-@media (min-width: 768px) {
-  .footer__container {
-    // display: flex;
-    // align-items: baseline;
-  }
 }
 
 @media (min-width: 1200px) {
