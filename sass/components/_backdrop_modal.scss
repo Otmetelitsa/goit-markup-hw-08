@@ -38,7 +38,7 @@
   transition: transform 250ms var(--cubic);
   z-index: 10;
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     max-height: 100vh;
     overflow-y: auto;
   }
@@ -74,7 +74,7 @@
   padding-left: 42px;
   transition: border-color 250ms var(--cubic);
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     min-width: 448px;
   }
 }
@@ -118,7 +118,7 @@
     color: rgba(117, 117, 117, 0.5);
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     min-width: 448px;
   }
 }
@@ -179,7 +179,7 @@
     transition: fill 250ms var(--cubic);
   }
 
-  @media (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     outline: none;
   }
 }

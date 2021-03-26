@@ -25,7 +25,7 @@
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.192;
@@ -44,7 +44,7 @@
           align-items: center;
 }
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .header-contact {
     font-size: 12px;
     line-height: 1.166;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.363;
@@ -124,7 +124,7 @@
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal-title {
     line-height: 1.15;
   }
@@ -146,7 +146,7 @@
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal__label-check {
     font-size: 14px;
     line-height: 1.714;

@@ -3,8 +3,10 @@
 }
 
 .footer__tablet {
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    align-items: baseline;
+    justify-content: space-around;
   }
 }
 
@@ -13,21 +15,25 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 768px) {
-    margin-left: 60px;
+  @media screen and (min-width: 768px) {
+    // margin-left: 60px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 0;
     align-items: start;
   }
 }
 
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .footer__address {
-  margin-top: 20px;
   text-align: center;
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     text-align: start;
   }
 }
@@ -37,7 +43,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: block;
   }
 }
@@ -48,7 +54,7 @@
   text-align: center;
   color: var(--text-grey-op60);
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 9px;
   }
 }
@@ -56,12 +62,12 @@
 .join {
   margin-top: 60px;
 
-  @media (min-width: 768px) {
-    margin-top: 5px;
-    margin-left: 163px;
+  @media screen and (min-width: 768px) {
+    // margin-top: 5px;
+    // margin-left: 163px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 15px;
     margin-left: 70px;
   }
@@ -71,7 +77,7 @@
   margin-bottom: 20px;
   text-align: center;
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: block;
     text-align: start;
   }
@@ -86,7 +92,7 @@
   margin-top: 60px;
   text-align: center;
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 12px;
     margin-left: auto;
     text-align: start;
@@ -107,11 +113,11 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   font-family: inherit;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 450px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
     padding: 0 12px;
   }
@@ -127,7 +133,7 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 0;
     margin-left: 12px;
     margin-right: 0;
@@ -142,7 +148,7 @@
   margin-left: 10px;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
   }
